@@ -176,4 +176,4 @@ app.use((err: unknown, _req: Request, res: Response, _next: NextFunction) => {
 });
 
 const port = Number(process.env.PORT ?? 3001);
-app.listen(port, () => console.log(`API listening on http://localhost:${port}`));
+app.listen(port, "0.0.0.0", () => console.log(`API listening on http://localhost:${port}`));
